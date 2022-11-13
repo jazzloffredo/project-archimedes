@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "proj-archimedes"
+  },
+  "targets": {
+    "proj-archimedes": {
+      "hosting": {
+        "project-archimedes": [
+          "proj-archimedes"
+        ]
+      }
+    }
+  }
+}
