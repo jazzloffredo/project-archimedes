@@ -6,14 +6,16 @@ import { provideFunctions, getFunctions } from '@angular/fire/functions';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { environment } from '../environments/environment';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
   imports: [
-    BrowserModule,
     AppRoutingModule,
+    BrowserModule,
+    CoreModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFunctions(() => getFunctions())
   ],
