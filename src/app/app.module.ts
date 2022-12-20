@@ -5,8 +5,8 @@ import { provideFunctions, getFunctions } from '@angular/fire/functions';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { environment } from '../environments/environment';
 import { CoreModule } from './core/core.module';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
