@@ -17,7 +17,7 @@ import { environment } from '../environments/environment';
     BrowserModule,
     CoreModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideFunctions(() => getFunctions())
+    provideFunctions(() => getFunctions()),
   ],
   providers: [],
   bootstrap: [AppComponent]

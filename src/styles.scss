@@ -1,6 +1,6 @@
-/* RESET */
-@use "reset";
-
 /* THEMES */
 @use "themes/theme-dark";
 @use "themes/theme-light";
+
+/* NORMALIZE */
+@import "node_modules/modern-normalize/modern-normalize.css";

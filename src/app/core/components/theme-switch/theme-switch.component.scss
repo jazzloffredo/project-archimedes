@@ -1,0 +1,12 @@
+@use "colors";
+@use "themes/theme";
+
+$component: ".theme-switch" !default;
+
+$theme-switch__button--height: 2rem;
+
+#{$component}__button {
+    height: $theme-switch__button--height;
+    width: calc(2 * $theme-switch__button--height);
+    border: 1px solid colors.$gray;
+}
