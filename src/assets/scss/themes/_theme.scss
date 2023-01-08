@@ -1,0 +1,18 @@
+@use "sass:map";
+
+/* BASE VARS */
+$_vars: (
+  "bg"
+) !default;
+
+/* CSS --> SCSS MAPPINGS */
+$bg: var(--bg);
+
+/* THEME-IFY MIXIN */
+@mixin theme-ify($theme-vars) {
+  @each $key in $_vars {
+    @if map.has-key($theme-vars, $key) {
+      --#{$key}: #{map.get($theme-vars, $key)};
+    }
+  }
+}

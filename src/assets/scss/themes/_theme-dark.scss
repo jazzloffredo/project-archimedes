@@ -1,0 +1,11 @@
+@use "theme";
+
+$_theme: "dark" !default;
+
+$dark: (
+  "bg": #000
+);
+
+.#{$_theme} {
+  @include theme.theme-ify($dark);
+}

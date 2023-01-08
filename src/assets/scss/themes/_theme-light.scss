@@ -1,0 +1,11 @@
+@use "theme";
+
+$_theme: "light" !default;
+
+$light: (
+  "bg": #fff
+);
+
+.#{$_theme} {
+  @include theme.theme-ify($light);
+}

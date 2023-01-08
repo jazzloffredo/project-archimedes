@@ -1,0 +1,7 @@
+@use "themes/theme";
+
+.fullscreen {
+  background-color: theme.$bg;
+  height: 100vh;
+  width: 100vw;
+}
